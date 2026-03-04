@@ -9,8 +9,10 @@ import {
   Drone,
   BarChart,
   LogOut,
-  Bell,  // ← ADDED
+  Bell,
+    // ← ADDED
 } from "lucide-react";
+import { FaBlogger } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -71,6 +73,12 @@ export default function AdminSidebar({ isCollapsed, setIsCollapsed, isMobileOpen
         icon: Bell,
         label: "Notifications",
         path: "/admin/notifications",
+      },
+      {
+        id:"BlogPage",
+        icon:FaBlogger,
+        label:"Blog",
+        path:"/admin/blogapp",
       },
       {
         id: "analytics",

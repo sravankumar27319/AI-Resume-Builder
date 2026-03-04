@@ -48,6 +48,7 @@ import AdminAnalytics from "./components/admin/AdminAnalytics/AdminAnalytics";
 import AdminTemplates from "./components/admin/AdminCreateTemplates/Template";
 import AdminSecurity from "./components/admin/AdminSecurity/AdminSecurity";
 import AdminProfile from "./components/admin/AdminProfile/AdminProfile";
+import Blogapp from "./components/admin/blog-app/main";
 
 // User routes
 import UserRoutes from "./pages/UserRoutes";
@@ -121,6 +122,7 @@ function App() {
             <Route path="analytics" element={<AdminAnalytics />} />
             <Route path="change-password" element={<AdminSecurity />} />
             <Route path="profile" element={<AdminProfile />} />
+            <Route path="blogapp" element={<Blogapp/>}/>
           </Route>
 
           {/* ================= 404 ================= */}
