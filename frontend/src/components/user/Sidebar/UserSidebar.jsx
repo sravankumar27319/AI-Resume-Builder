@@ -7,7 +7,6 @@ import {
   FileUser,
   FilePen,
   CheckCircle,
-  Files,
   Download,
   LogOut,
   Menu,
@@ -73,13 +72,6 @@ export default function UserSidebar() {
       label: "ATS Score Checker",
       path: "/user/ats-checker",
     },
-
-    {
-      id: "myresumes",
-      icon: Files,
-      label: "My Resumes",
-      path: "/user/my-resumes",
-    },
     {
       id: "downloads",
       icon: Download,
@@ -115,7 +107,7 @@ export default function UserSidebar() {
   return (
     <>
       {/* Toggle Buttons */}
-      <div className="fixed md:top-4 top-5 md:left-4 left-2 z-[60] flex gap-2">
+      <div className="fixed md:top-4 top-5 md:left-4 left-2 z-[1000] flex gap-2">
         <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}
           className="md:hidden"
@@ -172,7 +164,7 @@ export default function UserSidebar() {
                     <motion.span
                       initial={{ scale: 0 }}
                       animate={{ scale: 1 }}
-                      className={`${isCollapsed ? 'absolute -top-1 -right-1' : 'ml-auto'} inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white rounded-full ${active ? 'bg-yellow-400' : 'bg-yellow-400'}`}
+                      className={`${isCollapsed ? "absolute -top-1 -right-1" : "ml-auto"} inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white rounded-full ${active ? "bg-yellow-400" : "bg-yellow-400"}`}
                     >
                       {item.badge}
                     </motion.span>

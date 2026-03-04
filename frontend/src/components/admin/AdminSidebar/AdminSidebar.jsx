@@ -61,12 +61,7 @@ export default function AdminSidebar({ isCollapsed, setIsCollapsed, isMobileOpen
         path: "/admin/subscription",
       },
       { id: "users", icon: User, label: "Users", path: "/admin/users" },
-      {
-        id: "accept",
-        icon: Drone,
-        label: "Accept User Template",
-        path: "/admin/template-requests",
-      },
+     
       // ← ADDED Notifications item
       {
         id: "notifications",
